@@ -32,6 +32,8 @@ main {
   background-color: rgb(138, 213, 210);
   padding: 1rem;
   border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
 }
 
 .user-response img {
@@ -49,10 +51,15 @@ main {
 #user-responses {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  grid-gap: 25px;
 }
 
 .user-response img:hover {
   transform: scale(1.2);
-  transition: 0.5s ease-in-out;
+  transition: 0.7s ease-in;
+  transition: 0.7s ease-out;
+}
+
+h2 {
+  color: rgb(1, 49, 69);
 }
