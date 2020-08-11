@@ -8,9 +8,69 @@
   </head>
   <body>
     <header><h1>Brands, Travelling, and Fun at Work 🛩 👋</h1></header>
+    <div id="controls">
+      <div>
+        <label for="name">Name</label>
+        <select id="name">
+          <option>all</option>
+          <option>Jane Meng</option>
+          <option>Hyder Mohammed</option>
+          <option>Yash Maha</option>
+          <option>Sara Ho</option>
+          <option>Daniyal Naqvi</option>
+          <option>Suhan Li</option>
+          <option>Carlos Tutiven</option>
+          <option>Alex Krolak</option>
+          <option>Patrick O'Sullivan</option>
+          <option>Alexis Matheus</option>
+        </select>
+      </div>
+      <div>
+        <label for="favorite-snack">Favorite Snack</label>
+        <select id="favorite-snack">
+          <option>all</option>
+          <option value="Favorite Snack: Tim Hortons">Tim Hortons</option>
+          <option value="Favorite Snack: Burger King">Burger King</option>
+          <option value="Favorite Snack: Popeyes">Popeyes</option>
+        </select>
+      </div>
+      <div>
+        <label for="favourite-country">Favorite Country</label>
+        <select id="favourite-country">
+          <option>all</option>
+          <option>France</option>
+          <option>Singapore</option>
+          <option>Germany</option>
+          <option>Thailand</option>
+        </select>
+      </div>
+      <div>
+        <label for="search">Search</label>
+        <input id="search" type="text" autocomplete="off" />
+      </div>
+    </div>
     <main>
       <section id="user-responses"><h2>Loading...</h2></section>
+      <table>
+        <thead>
+          <tr>
+            <th>Chicken Sandwich</th>
+            <th>Impossible Whopper</th>
+            <th>Timbits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="france-votes">?</td>
+            <td id="germany-votes">?</td>
+            <td id="thailand-votes">?</td>
+            <td id="singapore-votes">?</td>
+          </tr>
+        </tbody>
+      </table>
+      <canvas id="pie-chart" width="400" height="400"></canvas>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js"></script>
     <script src="data.js"></script>
   </body>
